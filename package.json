@@ -1,0 +1,32 @@
+{
+  "name": "@codely/knowledge-engine",
+  "version": "0.1.0",
+  "description": "Codely Knowledge Engine — Memory system, hybrid retrieval, and personalization for DeepTutor-equivalent capabilities",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "knowledge-engine": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "node --loader ts-node/esm src/index.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@xenova/transformers": "^2.14.0",
+    "better-sqlite3": "^11.0.0",
+    "fastmcp": "^3.24.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
